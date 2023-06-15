@@ -7,10 +7,11 @@ channels:
 dependencies:
   - python=3.8
   - pip
-  - pytorch=2.0.0
+  - pytorch=1.13.0
   - pytorch-cuda=11.7
-  - torchvision=0.15.0
+  - torchvision=0.14.0
   - pytorch-lightning
+  - pytorch-geometric
   - torchmetrics
   - matplotlib
   - tqdm
@@ -18,7 +19,6 @@ dependencies:
   - scipy
   - igl
   - meshplot
-  - pyg
   - pip:
     - pysdf
     - trimesh[easy]    
