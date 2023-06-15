@@ -280,7 +280,7 @@ def evaluate_once(args, exp_name_dir, loggers, split):
     checkpoint_file = exp_name_dir / f"{args.checkpoint}.ckpt"
     model = JointPrediction.load_from_checkpoint(
         checkpoint_file,
-        map_location=torch.device("cpu")
+        map_location=torch.device("cuda")
     )
     print(f"Evaluating checkpoint {checkpoint_file} on {split} split")
     trainer = get_trainer(args, loggers, mode="evaluation")

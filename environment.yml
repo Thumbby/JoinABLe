@@ -5,20 +5,20 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.7
+  - python=3.8
   - pip
-  - pytorch=1.8
-  - cudatoolkit=10.2
-  - torchvision=0.9.1
-  - pytorch-lightning=1.3.7
-  - torchmetrics=0.4.0
+  - pytorch=2.0.0
+  - pytorch-cuda=11.7
+  - torchvision=0.15.0
+  - pytorch-lightning
+  - torchmetrics
   - matplotlib
   - tqdm
-  - pytorch-geometric=1.7.2
   - networkx
   - scipy
   - igl
   - meshplot
+  - pyg
   - pip:
     - pysdf
     - trimesh[easy]    
