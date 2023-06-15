@@ -1,3 +1,5 @@
+*.stp
+*.smt
 .ipynb_checkpoints/
 __pycache__/
 .vscode/
